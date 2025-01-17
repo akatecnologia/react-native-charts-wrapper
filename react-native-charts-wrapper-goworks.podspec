@@ -3,7 +3,7 @@ require "json"
 package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 
 Pod::Spec.new do |s|
-  s.name         = 'react-native-charts-wrapper'
+  s.name         = 'react-native-charts-wrapper-goworks'
   s.version      = package["version"]
   s.summary      = package["description"]
   s.author       = package["author"]
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.platform     = :ios, "12.0"
 
-  s.source       = { :git => "https://github.com/wuxudong/react-native-charts-wrapper.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/akatecnologia/react-native-charts-wrapper.git", :tag => "#{s.version}" }
   s.source_files = "ios/ReactNativeCharts/**/*.{h,m,swift}"
   s.static_framework = true
 
